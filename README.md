@@ -25,13 +25,14 @@ sudo apt install ts-node
 npm install prompt-sync
 npm i --save-dev @types/node
 ```
-2. Compile and Run
-To compile:
+2. To compile:
+```
 tsc yourfile.ts
-
-To Run:
+```
+3. To Run:
+```
 node yourfile.js
-
+```
 ## How the Game Works
 1. The game randomly selects an NBA player from a pool.
 2. The player is guessed based on stats (points, assists, rebounds).
