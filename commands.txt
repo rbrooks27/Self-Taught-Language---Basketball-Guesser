@@ -1,0 +1,8 @@
+To compile:
+tsc filename.ts
+node filename.js
+
+Remember to:
+git add
+git commit -m ""
+git push
