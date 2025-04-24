@@ -1,1 +1,15 @@
 # Self-Taught-Language---Basketball-Guesser
+For my full TypeScript program, I plan to develop an interactive guessing game called “Guess the NBA Player!”. This game will challenge users to identify NBA players based on clues such as career statistics, teams played for, and other relevant facts. The game will use a combination of real or mock data to simulate the experience.
+
+To highlight the unique features of TypeScript and demonstrate sound programming practices, my project will include:
+
+- Interfaces to define structured types for players, stats, and game state.
+- Type Aliases for simplifying complex type definitions and improving code readability.
+- Type Assertions where needed to safely work with dynamic or user-input data.
+- Encapsulation through classes that manage different parts of the game logic, such as the player database, the game engine, and user input handling.
+- Functions to handle tasks like comparing guesses, selecting random players, and formatting hints.
+- Recursion for challenges like checking nested stats or searching through team histories.
+- Loops and Conditionals to control game flow, iterate over datasets, and handle user interactions.
+- Unique TypeScript Features such as literal types, discriminated unions, and strict null checks to ensure robust and type-safe code.
+
+The goal is to build a fun, educational program that also showcases how TypeScript can be used to structure a complex, interactive application with clarity and safety. This project will help reinforce key TypeScript concepts while producing a creative and engaging final product.
