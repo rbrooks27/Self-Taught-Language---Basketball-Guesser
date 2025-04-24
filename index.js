@@ -19,10 +19,10 @@ var lebron = createPlayer(["LeBron James", "King James", "Lebron", "LBJ", "The G
 4 // Championships
 );
 var curry = createPlayer(["Stephen Curry", "Steph", "Chef Curry", "Splash Brother"], 24.8, 6.4, 4.7, ["Warriors"], 4);
-var tatum = createPlayer(["Jayson Tatum", "JT", "Taco Jay"], 26.4, 4.3, 8.1, ["Celtics"], 0);
+var tatum = createPlayer(["Jayson Tatum", "JT", "Taco Jay", "Tatum"], 26.4, 4.3, 8.1, ["Celtics"], 0);
 var giannis = createPlayer(["Giannis Antetokounmpo", "Greek Freak", "Giannis"], 29.5, 5.9, 11.2, ["Bucks"], 1);
 var jokic = createPlayer(["Nikola Jokic", "Joker", "Jokic"], 26.4, 9.0, 12.4, ["Nuggets"], 1);
-var durant = createPlayer(["Kevin Durant", "KD", "Slim Reaper"], 27.1, 5.6, 7.1, ["Thunder", "Warriors", "Nets", "Suns"], 2);
+var durant = createPlayer(["Kevin Durant", "KD", "Slim Reaper", "Durant"], 27.1, 5.6, 7.1, ["Thunder", "Warriors", "Nets", "Suns"], 2);
 // Randomizer function
 function getRandomPlayer(players) {
     var index = Math.floor(Math.random() * players.length);
