@@ -3,7 +3,7 @@ const input = require('prompt-sync')();
 
 // Define the interface to help make stats
 interface Player {
-  name: string;
+  name: string[];
   pointsPerGame: number;
   assistsPerGame: number;
   reboundsPerGame: number;
@@ -13,7 +13,7 @@ interface Player {
 
 // Helper function to create a player
 function createPlayer(
-  name: string,
+  name: string[],
   pointsPerGame: number,
   assistsPerGame: number,
   reboundsPerGame: number,
@@ -32,22 +32,58 @@ function createPlayer(
 
 // Where to Create These Players
 const lebron = createPlayer(
-  "LeBron James",
-  27.2,
-  7.3,
-  7.5,
-  ["Cavaliers", "Heat", "Lakers"],
-  4
+  ["LeBron James", "King James", "Lebron", "LBJ", "The Goat"],
+  27.2, // Points
+  7.3, // Assists
+  7.5, // Rebounds
+  ["Cavaliers", "Heat", "Lakers"], // Teams Played For
+  4 // Championships
 );
 
 const curry = createPlayer(
-  "Stephen Curry",
+  ["Stephen Curry", "Steph", "Chef Curry", "Splash Brother"],
   24.8,
   6.4,
   4.7,
   ["Warriors"],
   4
 );
+
+const tatum = createPlayer(
+    ["Jayson Tatum", "JT", "Taco Jay", "Tatum"],
+    26.4,
+    4.3,
+    8.1,
+    ["Celtics"],
+    0
+  );
+
+const giannis = createPlayer(
+    ["Giannis Antetokounmpo", "Greek Freak", "Giannis"],
+    29.5,
+    5.9,
+    11.2,
+    ["Bucks"],
+    1
+  );
+  
+  const jokic = createPlayer(
+    ["Nikola Jokic", "Joker", "Jokic"],
+    26.4,
+    9.0,
+    12.4,
+    ["Nuggets"],
+    1
+  );
+  
+  const durant = createPlayer(
+    ["Kevin Durant", "KD", "Slim Reaper", "Durant"],
+    27.1,
+    5.6,
+    7.1,
+    ["Thunder", "Warriors", "Nets", "Suns"],
+    2
+  );
 
 // Randomizer function
 function getRandomPlayer(players: Player[]): Player {
@@ -77,7 +113,7 @@ function playGame(players: Player[]) {
 
     const userGuess = input("Your Guess: ").trim().toLowerCase();
 
-    if (userGuess === mysteryPlayer.name.toLowerCase()) {
+    if (mysteryPlayer.name.some((name) => name.toLowerCase() === userGuess)) {
       console.log("\n Correct! You guessed the player!");
       return;
     } else {
@@ -87,9 +123,9 @@ function playGame(players: Player[]) {
     attempts++;
   }
 
-  console.log(`\nOut of attempts! The correct answer was: ${mysteryPlayer.name}`);
+  console.log(`\nOut of attempts! The correct answer was: ${mysteryPlayer.name[0]}`);
 }
 
 // Launch the game with a player pool still try to figure out how to do this better
-const players: Player[] = [lebron, curry];
+const players: Player[] = [lebron, curry, giannis, tatum, durant, jokic];
 playGame(players);
