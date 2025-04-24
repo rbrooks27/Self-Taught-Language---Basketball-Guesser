@@ -126,6 +126,6 @@ function playGame(players: Player[]) {
   console.log(`\nOut of attempts! The correct answer was: ${mysteryPlayer.name[0]}`);
 }
 
-// Launch the game with a player pool still try to figure out how to do this better
+// Launch the game with a player pool still trying to figure out how to do this better
 const players: Player[] = [lebron, curry, giannis, tatum, durant, jokic];
 playGame(players);
