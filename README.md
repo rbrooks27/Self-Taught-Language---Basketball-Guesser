@@ -36,6 +36,6 @@ node yourfile.js
 ## How the Game Works
 1. The game randomly selects an NBA player from a pool.
 2. The player is guessed based on stats (points, assists, rebounds).
-3. After two incorrect guesses, more information is revealed, including the teams they played for and the number of championships won.
-4. The user has a maximum of 3 attempts to guess correctly.
+3. After three incorrect guesses, more information is revealed, including the teams they played for and the number of championships won.
+4. The user has a maximum of 5 attempts to guess correctly.
 5. If the user guesses correctly, they win the game. If they run out of attempts, the correct answer is revealed.
