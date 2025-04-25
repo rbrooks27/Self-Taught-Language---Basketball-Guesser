@@ -537,4 +537,13 @@ const players: Player[] = [
     jamesHarden
   ];
   
-playGame(players);
+// Game loop to allow replaying
+while (true) {
+  playGame(players);
+
+  const again = input("\nWould you like to play again? (yes/no): ").trim().toLowerCase();
+  if (again !== "yes" && again !== "y") {
+    console.log("Thanks for playing Elite Ball Knowledge! See you next time!");
+    break;
+  }
+}
